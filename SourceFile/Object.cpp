@@ -2,10 +2,7 @@
 
 Base_Object::Base_Object(){
     base_surface = NULL;
-    base_rect.h = 0;
-    base_rect.w = 0;
-    base_rect.x = 0;
-    base_rect.y = 0;
+    base_rect = {0, 0, 0, 0};
 }
 
 void Base_Object::Set_Surface(SDL_Surface *p_surface){
@@ -53,10 +50,7 @@ bool Base_Object::Load_ImageEx(SDL_Rect texture_rect, SDL_Rect render_rect, doub
 Base_Object::~Base_Object(){
     SDL_FreeSurface(base_surface);
     base_surface = NULL;
-    base_rect.h = 0;
-    base_rect.w = 0;
-    base_rect.x = 0;
-    base_rect.y = 0;
+    base_rect = {0, 0, 0, 0};
 }
 
 /// @brief ////////////////////////////////////////////////////////////////////////////////
