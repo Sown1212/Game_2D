@@ -14,8 +14,8 @@ int main(int argc, char *argv[]){
         timer.Up_Count();
         timer.Set_Firt_Time(SDL_GetTicks());
 
-        game.Handle_Input();
-        game.Load_Frame();
+        //game.Handle_Input();
+        //game.Load_Frame();
 
         timer.Set_Last_Time(SDL_GetTicks());
         timer.Delay_Frame();
