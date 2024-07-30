@@ -9,13 +9,12 @@ int main(int argc, char *argv[]){
     SetGame();
     SetMap();
     SetPlayer();
-
     while(game.Get_Status()){
-        timer.Up_Count();
+        timer.Up_Count(); 
         timer.Set_Firt_Time(SDL_GetTicks());
 
-        //game.Handle_Input();
-        //game.Load_Frame();
+        game.Handle_Input();
+        game.Load_Frame();
 
         timer.Set_Last_Time(SDL_GetTicks());
         timer.Delay_Frame();

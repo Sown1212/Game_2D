@@ -106,8 +106,8 @@ void Main_Object::Stand(){
 }
 
 void Main_Object::Run(){
-    
-    rectTemp = rectPlayer_run[cnt];
+    if(rectRenderer.y == game.Get_Ground())
+        rectTemp = rectPlayer_run[cnt];
     if(cnt >= 3) cnt = 0;
     cnt++;
     if(player.Get_Direction())
