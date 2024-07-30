@@ -40,7 +40,6 @@ int f = 0;
 SDL_Window *window = nullptr;
 SDL_Renderer *renderer = nullptr;
 const char *path = "E:/Dev_Game/Game/Font/Arial.ttf";
-const char* gifPath = "E:/Dev_Game/Game/SourceFile/Gid.gif";
 SDL_Event event;
 
 Base_Object backgroud;

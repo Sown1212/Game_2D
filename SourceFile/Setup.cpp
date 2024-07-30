@@ -58,7 +58,7 @@ bool Create_Renderer(){
 }
 
 void SetGame(){
-    timer.Set_FPS(60);
+    timer.Set_FPS(45);
     game.Set_Status(RUN);
     game.Set_Ground(390);
     game.Set_Gravity(5);

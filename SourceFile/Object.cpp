@@ -219,7 +219,8 @@ void Game::Handle_Input(){
                     break;
                 }
                 case SDLK_SPACE:{
-                    player.Set_Jump(true);
+                    if(rectRenderer.y == game.Get_Ground())
+                        player.Set_Jump(true);
                     break;
                 }
                 default:{
@@ -236,7 +237,9 @@ void Game::Handle_Input(){
 
 void Game::Load_Frame(){
     player.Handle_Action();
-    backgroud.Load_Image(rectBackgroud, rectBackgroud);
+    SDL_Rect recta = {0, 450, Window_Width, Window_Height};
+    SDL_Rect rectb = {0, 450, Window_Width, Window_Height};
+    backgroud.Load_Image(recta, rectb);
     if( player.Get_Direction() )
        player.Load_Image(rectTemp, rectRenderer);
     else
