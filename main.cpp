@@ -1,8 +1,7 @@
-//Makefile : make build
-//Commandline : g++ Main.cpp -o Main.exe -IE:/Dev_Game/Game/HeaderFile -lmingw32 -lSDL2main -lSDL2 -lSDL2_image
+//Commandline : g++ main.cpp -o main.exe -IHeaderFile -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 #include <Data.hpp>
-#include "Setup.cpp"
-#include "Object.cpp"
+#include "SourceFile/Setup.cpp"
+#include "SourceFile/Object.cpp"
 int i = 0;
 
 int main(int argc, char *argv[]){
@@ -10,7 +9,7 @@ int main(int argc, char *argv[]){
     SetGame();
     SetMap();
     SetPlayer();
-    const char* gifPath = "E:/Dev_Game/Game/SourceFile/Gid.gif";
+    const char* gifPath = "Gid.gif";
     SDL_RWops* rwops = SDL_RWFromFile(gifPath, "rb");
     IMG_Animation* animation = IMG_LoadGIFAnimation_RW(rwops);
 

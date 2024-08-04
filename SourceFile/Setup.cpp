@@ -7,7 +7,7 @@ void Open(){
 
 void SetMap(){
     rectBackgroud = {0, 0, Window_Width, Window_Height};
-    backgroud.Set_Surface(IMG_Load("E:/Dev_Game/Game/Map/Map1/backgroud.jpg"));
+    backgroud.Set_Surface(IMG_Load("Map/Map1/backgroud.jpg"));
     backgroud.Set_Rect(rectBackgroud);
 }
 
@@ -31,7 +31,7 @@ void SetPlayer(){
     rectRenderer = {50, 100, Player_Width, Player_Height};
     
     rectTemp = rectPlayer[0];
-    player.Set_Surface(IMG_Load("E:/Dev_Game/Game/Player/Player.png"));
+    player.Set_Surface(IMG_Load("Player/Player.png"));
     player.Set_Rect(rectTemp);
     //player.Set_Color_Key(g_ColorKeyR, g_ColorKeyG, g_ColorKeyB);
 }
