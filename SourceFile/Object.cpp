@@ -259,7 +259,7 @@ void Font::Set_Value(int value){
 }
 
 void Font::Set_Color(uint8_t r, uint8_t g, uint8_t b, uint8_t a){
-    this->color = {r, g, b, a};
+    this->color= {r, g, b, a};
 }
 
 void Font::ValueFromText(){ 
